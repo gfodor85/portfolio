@@ -1,0 +1,97 @@
+// ----- Navigation -----
+
+.navbar
+    font-family: ''
+    font-size: 15px
+    font-weight: 700
+    text-transform: uppercase
+    background-color: transparent
+    
+    float: left
+    padding: 10px 0px 20px 0px
+    border-bottom: 0
+    letter-spacing: 1px
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out
+    transition: background .5s ease-in-out,padding .5s ease-in-out
+    
+
+    a
+        color: $secondary-color
+        padding: 25px 20px 0 0
+        &:hover
+            background-color: transparent !important
+            color: rgb(209, 209, 209) !important
+        text-decoration: none
+        padding-left: 40px
+    
+    .nav
+        margin: 10px
+
+
+.navbar-toggle
+    border: 2px solid $primary-color
+    
+    .icon-bar
+        border: 1px solid $primary-color
+    
+
+.top-nav-collapse
+    background-color: rgba(255, 255, 255, 0.55)
+    height: 75px
+    
+
+    li
+        a
+            color: $primary-color
+            
+            
+.navbar-brand
+    background:
+        image: url(../img/leaf_logo.svg)
+        position: center
+        size: 60px 60px
+        repeat: no-repeat
+    position: relative
+    left: 30px
+    width: 60px
+    height: 60px
+    margin-right: 50px
+    
+
+.scroll-down
+    position: relatives
+    top: 150px
+    display: table
+    margin: 0 auto
+    font-size: 35px
+    color: $font-color
+    transform: translate(-50%, 0%)
+    animation: fade_arrow 2s ease-in-out infinite
+    
+    &:hover
+        color: $font-color
+    
+    &:active
+        color: $font-color
+
+    @keyframes fade_arrow
+      0%
+        transform: translate(0, -15px)
+        opacity: 0
+
+      50%
+        opacity: 1
+
+      100%
+        transform: translate(0, 15px)
+        opacity: 0
+
+@media (max-width: 713px)
+    .scroll-down
+        top: 50px
+
+@media (max-width: 431px)
+    .scroll-down
+        top: 20px
+    

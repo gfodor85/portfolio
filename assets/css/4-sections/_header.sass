@@ -1,0 +1,265 @@
+header
+    position: relative
+    width: 100%
+    height: 850px
+    padding-bottom: 0
+    overflow: hidden
+
+    video
+        position: fixed
+        //-o-object-fit: cover
+        object-fit: cover
+        width: 100%
+        height: 100%
+        z-index: -5
+        background:
+            image: url("../img/hero_bg.jpg")
+            size: cover
+            position: center center
+
+#video-bg
+    position: fixed
+    right: 0
+    bottom: 0
+    min-width: 100%
+    min-height: 100%
+    width: auto
+    height: auto
+
+
+.about_container
+    position: relative
+    top: 100px
+    width: 1000px
+
+    .hexa_text
+        position: relative
+        top: 0px
+        -webkit-filter: drop-shadow(0 0 15px rgba(0, 0, 0,5))
+        filter: drop-shadow(0 0 15px rgba(0, 0, 0,5))
+
+    .badges_sm
+        display: none
+        -webkit-filter: drop-shadow(0 0 15px rgba(0, 0, 0,5))
+        filter: drop-shadow(0 0 15px rgba(0, 0, 0,5))
+
+    .periodic_badges
+        position: absolute
+        top: 165px
+        left: -85px
+        -webkit-filter: drop-shadow(0 0 30px rgba(0, 0, 0, 1))
+        filter: drop-shadow(0 0 30px rgba(0, 0, 0, 1))
+
+        img
+            width: 140px
+
+        .logo_gf
+            position: absolute
+            top: -200px
+            left: 503px
+            width: 140px
+
+        .frontend_hex
+            position: absolute
+            left: 574px
+            top: -72px
+
+        .developer_hex
+            position: absolute
+            left: 718px
+            top: -72px
+
+        .designer_hex
+            position: absolute
+            left: 788px
+            top: 55px
+
+        .ux_hex
+            position: absolute
+            left: 932px
+            top: 55px
+
+        .ui_hex
+            position: absolute
+            left: 860px
+            top: 181px
+
+.header_bottom
+    min-height: 50px
+    min-width: 100%
+    position: absolute
+    bottom: 0
+    background-color: #fff
+
+    &:after
+        content: ''
+        width: 100%
+        height: 130px
+        position: absolute
+        top: 0px
+        background: inherit
+        z-index: 6
+        transform-origin: right top
+        transform: skewY(3deg)
+
+@media (max-width: 1200px)
+    header
+        height: 800px
+
+    .about_container
+        position: relative
+        top: 100px
+        width: 838px
+
+        .hexa_text
+            position: relative
+            top: 0px
+            width: 380px
+
+        .badges_sm
+            display: none
+
+        .periodic_badges
+            position: absolute
+            left: -160px
+            top: 163px
+
+            img
+                width: 120px
+
+            .logo_gf
+                position: absolute
+                top: -200px
+                left: 503px
+                width: 120px
+                -webkit-filter: drop-shadow(10px 10px 7px rgba(0,0,0,0.2))
+                filter: drop-shadow(10px 10px 7px rgba(0,0,0,0.2))
+
+            .frontend_hex
+                position: absolute
+                left: 563px
+                top: -90px
+
+            .developer_hex
+                position: absolute
+                left: 686px
+                top: -90px
+
+            .designer_hex
+                position: absolute
+                left: 746px
+                top: 18px
+
+            .ux_hex
+                position: absolute
+                left: 869px
+                top: 18px
+
+            .ui_hex
+                position: absolute
+                left: 807px
+                top: 126px
+
+
+
+@media (max-width: 992px)
+    header
+        height: 800px
+        background:
+            image: url("../img/hero_bg.jpg")
+            size: cover
+            position: center center
+
+    .about_container
+        position: relative
+        top: 100px
+        width: 680px
+
+        .hexa_text
+            position: relative
+            top: 50px
+            width: 350px
+
+        .badges_sm
+            display: none
+
+        .periodic_badges
+            position: absolute
+            left: -190px
+            top: 210px
+
+            img
+                width: 120px
+
+            .logo_gf
+                position: absolute
+                top: -200px
+                left: 503px
+                width: 120px
+                -webkit-filter: drop-shadow(10px 10px 7px rgba(0,0,0,0.2))
+                filter: drop-shadow(10px 10px 7px rgba(0,0,0,0.2))
+
+            .frontend_hex
+                position: absolute
+                left: 563px
+                top: -90px
+
+            .developer_hex
+                position: absolute
+                left: 686px
+                top: -90px
+
+            .designer_hex
+                position: absolute
+                left: 624px
+                top: 18px
+
+            .ux_hex
+                position: absolute
+                left: 748px
+                top: 18px
+
+            .ui_hex
+                position: absolute
+                left: 562px
+                top: 126px
+
+
+@media (max-width: 713px)
+    header
+        height: 1200px
+
+    .about_container
+        position: relative
+        top: 0px
+        width: 100%
+
+        .badges_lg
+            display: none
+
+        .badges_sm
+            display: block
+
+        .hexa_text
+            display: none
+
+@media (max-width: 431px)
+    header
+        height: 280vw
+
+    .scroll-down
+        bottom: -50px !important
+
+    .about_container
+        position: relative
+        top: 0px
+
+        .badges_lg
+            display: none
+
+        .badges_sm
+            display: block
+            margin: 0 auto !important
+
+        .hexa_text
+            display: none

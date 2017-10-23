@@ -1,0 +1,76 @@
+#skills
+    .row
+        height: 250px
+
+.myskills
+    position: relative
+    padding: 50px 0  50px 0
+    background:
+        color: $secondary-color
+        attachment: fixed
+        position: center center
+    color: $font-color
+
+
+    ul
+        margin: 0 auto
+
+
+.skills_title_container
+    position: relative
+    top: 60px
+    width: 200px
+
+    .skills_title
+        position: absolute
+        font-family: 'Muli'
+        font-weight: 900
+        font-size: 30px
+        color: white
+        text-transform: uppercase
+        width: 300px
+        right: 0
+        bottom: 0
+        transform: rotate(270deg)
+
+
+.tag_container1
+    position: relative
+    float: right
+    height: 250px
+    width: 250px
+
+
+.tag_container2
+    position: relative
+    float: left
+    height: 250px
+    width: 250px
+
+@media (max-width: 450px)
+
+    .skills_title_container
+        position: absolute
+        top: 200px
+        width: 200px
+
+        .skills_title
+                position: absolute
+                left: -135px
+                font-family: 'Muli'
+                font-size: 20px !important
+                text-transform: uppercase
+                transform: rotate(270deg)
+
+
+@media (max-width: 767px)
+
+    .tag_container1
+        position: relative
+        float: none
+        margin: 8px auto
+
+    .tag_container2
+        position: relative
+        float: none
+        margin: 8px auto
