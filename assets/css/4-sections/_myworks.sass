@@ -44,7 +44,6 @@
                 transform: scale(1)
 
                 &:hover
-                    transition: all 200ms ease-in
                     transform: scale(1.2)
                     z-index: 2
 
@@ -123,6 +122,16 @@
         margin-top: -62px
 
 
+    .hexagon-img
+
+        &:hover
+            transform: none !important
+
+        img
+            height: 229px
+
+
+
 @media (max-width: 450px)
 
     .hexagon-inner
@@ -153,7 +162,8 @@
         width: 200px
 
         .works_title
-            position: absolute
+            position: sticky
+            top: 20px
             left: -135px
             font-family: 'Muli'
             font-size: 20px !important

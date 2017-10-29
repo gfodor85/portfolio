@@ -1,6 +1,8 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
+var svgSymbols = require('gulp-svg-symbols');
+
 
 
 gulp.task('styles', function ()  {
@@ -25,4 +27,10 @@ gulp.task('serve', function () {
   gulp.watch('./**/*.html').on('change', browserSync.reload );
 });
 
-gulp.task('default', ['styles', 'serve']);
+gulp.task('sprites', function () {
+  return gulp.src('assets/img/svg/*.svg')
+    .pipe(svgSymbols())
+    .pipe(gulp.dest('assets/img'));
+});
+
+gulp.task('default', ['styles', 'serve', 'sprites']);

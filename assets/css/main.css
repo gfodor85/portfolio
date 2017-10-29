@@ -58,7 +58,7 @@ header {
     filter: drop-shadow(0 0 30px black); }
     .about_container .periodic_badges img {
       width: 140px; }
-    .about_container .periodic_badges .logo_gf {
+    .about_container .periodic_badges .logo {
       position: absolute;
       top: -200px;
       left: 503px;
@@ -264,7 +264,6 @@ header {
         transition: all 200ms ease-in;
         transform: scale(1); }
         .hexagon-container .hexagon-inner .hexagon-item .hexagon-img:hover {
-          transition: all 200ms ease-in;
           transform: scale(1.2);
           z-index: 2; }
         .hexagon-container .hexagon-inner .hexagon-item .hexagon-img img {
@@ -316,7 +315,11 @@ header {
     margin-top: -62px; }
   .hexagon-item:nth-child(even) {
     margin-left: 100px;
-    margin-top: -62px; } }
+    margin-top: -62px; }
+  .hexagon-img:hover {
+    transform: none !important; }
+  .hexagon-img img {
+    height: 229px; } }
 
 @media (max-width: 450px) {
   .hexagon-inner {
@@ -340,7 +343,8 @@ header {
     top: 200px;
     width: 200px; }
     .works_title_container .works_title {
-      position: absolute;
+      position: sticky;
+      top: 20px;
       left: -135px;
       font-family: 'Muli';
       font-size: 20px !important;
@@ -376,17 +380,12 @@ header {
     bottom: 0;
     transform: rotate(270deg); }
 
-.tag_container1 {
+.skill_icons_container {
   position: relative;
-  float: right;
-  height: 250px;
-  width: 250px; }
-
-.tag_container2 {
-  position: relative;
-  float: left;
-  height: 250px;
-  width: 250px; }
+  height: 250px; }
+  .skill_icons_container .skills-icon {
+    display: inline;
+    width: 90px; }
 
 @media (max-width: 450px) {
   .skills_title_container {

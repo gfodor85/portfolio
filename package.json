@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "browser-sync": "^2.18.13",
-    "gulp-sass": "^3.1.0"
+    "gulp-sass": "^3.1.0",
+    "gulp-svg-symbols": "^2.0.2"
   }
 }
