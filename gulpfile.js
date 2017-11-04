@@ -1,7 +1,8 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
 var browserSync = require('browser-sync').create();
-var svgSymbols = require('gulp-svg-symbols');
+var svgSprite = require("gulp-svg-sprites");
 
 
 
@@ -11,9 +12,12 @@ gulp.task('styles', function ()  {
         precision: 10,
         indentedSyntax: true
       }).on('error',  sass.logError))
+    .pipe(autoprefixer())
     .pipe(gulp.dest('assets/css'))
     .pipe(browserSync.stream());
 });
+
+
 
 gulp.task('serve', function () {
   browserSync.init({
@@ -29,7 +33,10 @@ gulp.task('serve', function () {
 
 gulp.task('sprites', function () {
   return gulp.src('assets/img/svg/*.svg')
-    .pipe(svgSymbols())
+  .pipe(svgSprite({
+        mode: 'symbols',
+        preview: false
+      }))
     .pipe(gulp.dest('assets/img'));
 });
 

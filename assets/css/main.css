@@ -16,11 +16,11 @@ header {
   position: relative;
   width: 100%;
   height: 850px;
-  padding-bottom: 0;
-  overflow: hidden; }
+  padding-bottom: 0; }
   header video {
     position: fixed;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 100%;
     height: 100%;
     z-index: -5;
@@ -39,57 +39,103 @@ header {
 
 .about_container {
   position: relative;
-  top: 100px;
-  width: 1000px; }
-  .about_container .hexa_text {
+  width: 1000px;
+  margin: 0 auto; }
+  .about_container .about_me {
     position: relative;
-    top: 0px;
+    left: -148px;
+    width: 800px;
+    height: 800px;
     -webkit-filter: drop-shadow(0 0 15px black);
     filter: drop-shadow(0 0 15px black); }
-  .about_container .badges_sm {
-    display: none;
-    -webkit-filter: drop-shadow(0 0 15px black);
-    filter: drop-shadow(0 0 15px black); }
+  .about_container .about_me_sm {
+    display: none; }
   .about_container .periodic_badges {
     position: absolute;
-    top: 165px;
-    left: -85px;
+    top: 220px;
+    left: -60px;
     -webkit-filter: drop-shadow(0 0 30px black);
     filter: drop-shadow(0 0 30px black); }
-    .about_container .periodic_badges img {
-      width: 140px; }
+    .about_container .periodic_badges #about-badge {
+      fill: white;
+      width: 150px;
+      height: 150px; }
     .about_container .periodic_badges .logo {
       position: absolute;
-      top: -200px;
-      left: 503px;
-      width: 140px; }
-    .about_container .periodic_badges .frontend_hex {
+      top: -125px;
+      left: 500px;
+      width: 150px;
+      height: 150px; }
+    .about_container .periodic_badges .front-end_hexa {
       position: absolute;
-      left: 574px;
-      top: -72px; }
-    .about_container .periodic_badges .developer_hex {
+      left: 574px; }
+    .about_container .periodic_badges .dv_hexa {
       position: absolute;
-      left: 718px;
-      top: -72px; }
-    .about_container .periodic_badges .designer_hex {
+      left: 718px; }
+    .about_container .periodic_badges .de_hexa {
       position: absolute;
       left: 788px;
-      top: 55px; }
-    .about_container .periodic_badges .ux_hex {
+      top: 125px; }
+    .about_container .periodic_badges .ux_hexa {
       position: absolute;
       left: 932px;
-      top: 55px; }
-    .about_container .periodic_badges .ui_hex {
+      top: 125px; }
+    .about_container .periodic_badges .ui_hexa {
       position: absolute;
       left: 860px;
-      top: 181px; }
+      top: 250px; }
+  .about_container .scroll-down {
+    position: absolute;
+    left: 50%;
+    bottom: 120px;
+    font-size: 35px;
+    color: #fff;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+    -webkit-animation: fade_arrow 2s ease-in-out infinite;
+            animation: fade_arrow 2s ease-in-out infinite; }
+    .about_container .scroll-down:hover {
+      color: #fff; }
+    .about_container .scroll-down:active {
+      color: #fff; }
+
+@-webkit-keyframes fade_arrow {
+  0% {
+    -webkit-transform: translate(0, -15px);
+            transform: translate(0, -15px);
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: translate(0, 15px);
+            transform: translate(0, 15px);
+    opacity: 0; } }
+
+@keyframes fade_arrow {
+  0% {
+    -webkit-transform: translate(0, -15px);
+            transform: translate(0, -15px);
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: translate(0, 15px);
+            transform: translate(0, 15px);
+    opacity: 0; } }
+    @media (max-width: 713px) {
+      .about_container .scroll-down .scroll-down {
+        top: 50px; } }
+    @media (max-width: 431px) {
+      .about_container .scroll-down .scroll-down {
+        top: 20px; } }
 
 .header_bottom {
   min-height: 50px;
   min-width: 100%;
   position: absolute;
   bottom: 0;
-  background-color: #fff; }
+  background-color: #fff;
+  z-index: -5; }
   .header_bottom:after {
     content: '';
     width: 100%;
@@ -98,135 +144,136 @@ header {
     top: 0px;
     background: inherit;
     z-index: 6;
-    transform-origin: right top;
-    transform: skewY(3deg); }
+    -webkit-transform-origin: right top;
+            transform-origin: right top;
+    -webkit-transform: skewY(3deg);
+            transform: skewY(3deg); }
 
 @media (max-width: 1200px) {
   header {
-    height: 800px; }
+    position: relative;
+    top: -80px;
+    height: 1000px; }
   .about_container {
     position: relative;
-    top: 100px;
-    width: 838px; }
-    .about_container .hexa_text {
-      position: relative;
-      top: 0px;
-      width: 380px; }
-    .about_container .badges_sm {
-      display: none; }
+    width: 1000px; }
+  .about_me {
+    position: relative;
+    left: -148px;
+    width: 800px;
+    height: 800px;
+    -webkit-filter: drop-shadow(0 0 15px black);
+    filter: drop-shadow(0 0 15px black); }
+    .about_me .periodic_badges {
+      position: absolute;
+      top: 165px;
+      left: -85px;
+      -webkit-filter: drop-shadow(0 0 30px black);
+      filter: drop-shadow(0 0 30px black); }
+      .about_me .periodic_badges .logo {
+        position: absolute;
+        top: -100px;
+        left: 509px;
+        width: 150px;
+        height: 150px; } }
+
+@media (max-width: 1100px) {
+  .about_container {
+    position: relative;
+    width: 680px;
+    top: 50px; }
     .about_container .periodic_badges {
       position: absolute;
       left: -160px;
-      top: 163px; }
-      .about_container .periodic_badges img {
-        width: 120px; }
-      .about_container .periodic_badges .logo_gf {
+      top: 320px; }
+      .about_container .periodic_badges .logo {
         position: absolute;
-        top: -200px;
-        left: 503px;
-        width: 120px;
-        -webkit-filter: drop-shadow(10px 10px 7px rgba(0, 0, 0, 0.2));
-        filter: drop-shadow(10px 10px 7px rgba(0, 0, 0, 0.2)); }
-      .about_container .periodic_badges .frontend_hex {
+        top: -225px;
+        left: 592px;
+        width: 150px;
+        height: 150px; }
+      .about_container .periodic_badges .front-end_hexa {
         position: absolute;
-        left: 563px;
-        top: -90px; }
-      .about_container .periodic_badges .developer_hex {
+        left: 668px;
+        top: -100px; }
+      .about_container .periodic_badges .dv_hexa {
         position: absolute;
-        left: 686px;
-        top: -90px; }
-      .about_container .periodic_badges .designer_hex {
+        left: 731px;
+        top: 30px; }
+      .about_container .periodic_badges .de_hexa {
         position: absolute;
-        left: 746px;
-        top: 18px; }
-      .about_container .periodic_badges .ux_hex {
+        left: 668px;
+        top: 160px; }
+      .about_container .periodic_badges .ux_hexa {
         position: absolute;
-        left: 869px;
-        top: 18px; }
-      .about_container .periodic_badges .ui_hex {
+        left: 600px;
+        top: 288px; }
+      .about_container .periodic_badges .ui_hexa {
         position: absolute;
-        left: 807px;
-        top: 126px; } }
+        left: 150px;
+        top: 288px; }
+  .scroll-down {
+    top: 750px; }
+  .header_bottom {
+    min-width: 100%;
+    position: absolute;
+    bottom: -57px;
+    background-color: #fff;
+    z-index: -5; } }
 
-@media (max-width: 992px) {
-  header {
-    height: 800px;
-    background-image: url("../img/hero_bg.jpg");
-    background-size: cover;
-    background-position: center center; }
-  .about_container {
-    position: relative;
-    top: 100px;
-    width: 680px; }
-    .about_container .hexa_text {
-      position: relative;
-      top: 50px;
-      width: 350px; }
-    .about_container .badges_sm {
-      display: none; }
-    .about_container .periodic_badges {
-      position: absolute;
-      left: -190px;
-      top: 210px; }
-      .about_container .periodic_badges img {
-        width: 120px; }
-      .about_container .periodic_badges .logo_gf {
-        position: absolute;
-        top: -200px;
-        left: 503px;
-        width: 120px;
-        -webkit-filter: drop-shadow(10px 10px 7px rgba(0, 0, 0, 0.2));
-        filter: drop-shadow(10px 10px 7px rgba(0, 0, 0, 0.2)); }
-      .about_container .periodic_badges .frontend_hex {
-        position: absolute;
-        left: 563px;
-        top: -90px; }
-      .about_container .periodic_badges .developer_hex {
-        position: absolute;
-        left: 686px;
-        top: -90px; }
-      .about_container .periodic_badges .designer_hex {
-        position: absolute;
-        left: 624px;
-        top: 18px; }
-      .about_container .periodic_badges .ux_hex {
-        position: absolute;
-        left: 748px;
-        top: 18px; }
-      .about_container .periodic_badges .ui_hex {
-        position: absolute;
-        left: 562px;
-        top: 126px; } }
-
-@media (max-width: 713px) {
+@media (max-width: 960px) {
   header {
     height: 1200px; }
-  .about_container {
-    position: relative;
-    top: 0px;
-    width: 100%; }
-    .about_container .badges_lg {
-      display: none; }
-    .about_container .badges_sm {
-      display: block; }
-    .about_container .hexa_text {
-      display: none; } }
-
-@media (max-width: 431px) {
-  header {
-    height: 280vw; }
-  .scroll-down {
-    bottom: -50px !important; }
-  .about_container {
-    position: relative;
-    top: 0px; }
-    .about_container .badges_lg {
-      display: none; }
-    .about_container .badges_sm {
-      display: block;
-      margin: 0 auto !important; }
-    .about_container .hexa_text {
-      display: none; } }
+    header .about_container {
+      position: relative;
+      width: auto;
+      height: 100%;
+      top: 100px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      header .about_container .about_me_sm {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 500px;
+        height: 100%;
+        fill: #fff; }
+      header .about_container .about_me, header .about_container .periodic_badges {
+        display: none; }
+        header .about_container .about_me #about-badge, header .about_container .periodic_badges #about-badge {
+          fill: white;
+          width: 120px;
+          height: 120px; }
+        header .about_container .about_me .logo, header .about_container .periodic_badges .logo {
+          position: absolute;
+          top: -200px;
+          left: 509px;
+          width: 150px;
+          height: 150px; }
+        header .about_container .about_me .front-end_hexa, header .about_container .periodic_badges .front-end_hexa {
+          position: absolute;
+          left: 574px;
+          top: -72px; }
+        header .about_container .about_me .dv_hexa, header .about_container .periodic_badges .dv_hexa {
+          position: absolute;
+          left: 718px;
+          top: -72px; }
+        header .about_container .about_me .de_hexa, header .about_container .periodic_badges .de_hexa {
+          position: absolute;
+          left: 645px;
+          top: 55px; }
+        header .about_container .about_me .ux_hexa, header .about_container .periodic_badges .ux_hexa {
+          position: absolute;
+          left: 792px;
+          top: 55px; }
+        header .about_container .about_me .ui_hexa, header .about_container .periodic_badges .ui_hexa {
+          position: absolute;
+          left: 718px;
+          top: 181px; } }
 
 .hexagon-container {
   position: relative;
@@ -247,7 +294,8 @@ header {
       width: 300px;
       right: 0;
       bottom: 0;
-      transform: rotate(270deg); }
+      -webkit-transform: rotate(270deg);
+              transform: rotate(270deg); }
   .hexagon-container .hexagon-inner {
     width: 855px;
     margin: 0 auto; }
@@ -260,11 +308,15 @@ header {
         position: absolute;
         display: inline-block;
         margin: 57.74px 0;
-        filter: drop-shadow(10px 10px 7px rgba(0, 0, 0, 0.5));
+        -webkit-filter: drop-shadow(10px 10px 7px rgba(0, 0, 0, 0.5));
+                filter: drop-shadow(10px 10px 7px rgba(0, 0, 0, 0.5));
+        -webkit-transition: all 200ms ease-in;
         transition: all 200ms ease-in;
-        transform: scale(1); }
+        -webkit-transform: scale(1);
+                transform: scale(1); }
         .hexagon-container .hexagon-inner .hexagon-item .hexagon-img:hover {
-          transform: scale(1.2);
+          -webkit-transform: scale(1.2);
+                  transform: scale(1.2);
           z-index: 2; }
         .hexagon-container .hexagon-inner .hexagon-item .hexagon-img img {
           height: 229px; }
@@ -317,7 +369,8 @@ header {
     margin-left: 100px;
     margin-top: -62px; }
   .hexagon-img:hover {
-    transform: none !important; }
+    -webkit-transform: none !important;
+            transform: none !important; }
   .hexagon-img img {
     height: 229px; } }
 
@@ -343,13 +396,15 @@ header {
     top: 200px;
     width: 200px; }
     .works_title_container .works_title {
+      position: -webkit-sticky;
       position: sticky;
       top: 20px;
       left: -135px;
       font-family: 'Muli';
       font-size: 20px !important;
       text-transform: uppercase;
-      transform: rotate(270deg); } }
+      -webkit-transform: rotate(270deg);
+              transform: rotate(270deg); } }
 
 #skills .row {
   height: 250px; }
@@ -378,7 +433,8 @@ header {
     width: 300px;
     right: 0;
     bottom: 0;
-    transform: rotate(270deg); }
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg); }
 
 .skill_icons_container {
   position: relative;
@@ -398,7 +454,8 @@ header {
       font-family: 'Muli';
       font-size: 20px !important;
       text-transform: uppercase;
-      transform: rotate(270deg); } }
+      -webkit-transform: rotate(270deg);
+              transform: rotate(270deg); } }
 
 @media (max-width: 767px) {
   .tag_container1 {
@@ -426,6 +483,7 @@ form {
     height: 40px;
     border: none;
     border-bottom: 3px solid #008598;
+    -webkit-transition: border-bottom 0.4s ease;
     transition: border-bottom 0.4s ease; }
     form input:focus, form input:active {
       outline: none;
@@ -439,6 +497,7 @@ form {
     resize: none;
     border: none;
     border-bottom: 3px solid #008598;
+    -webkit-transition: border-bottom 0.4s ease;
     transition: border-bottom 0.4s ease; }
     form textarea:focus, form textarea:active {
       outline: none;
@@ -493,7 +552,6 @@ form {
   border-bottom: 0;
   letter-spacing: 1px;
   -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-  -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
   transition: background .5s ease-in-out,padding .5s ease-in-out; }
   .navbar a {
     color: #008598;
@@ -527,38 +585,6 @@ form {
   width: 60px;
   height: 60px;
   margin-right: 50px; }
-
-.scroll-down {
-  position: relatives;
-  top: 150px;
-  display: table;
-  margin: 0 auto;
-  font-size: 35px;
-  color: #fff;
-  transform: translate(-50%, 0%);
-  animation: fade_arrow 2s ease-in-out infinite; }
-  .scroll-down:hover {
-    color: #fff; }
-  .scroll-down:active {
-    color: #fff; }
-
-@keyframes fade_arrow {
-  0% {
-    transform: translate(0, -15px);
-    opacity: 0; }
-  50% {
-    opacity: 1; }
-  100% {
-    transform: translate(0, 15px);
-    opacity: 0; } }
-
-@media (max-width: 713px) {
-  .scroll-down {
-    top: 50px; } }
-
-@media (max-width: 431px) {
-  .scroll-down {
-    top: 20px; } }
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
@@ -650,8 +676,8 @@ figure {
   margin: 1em 40px; }
 
 hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   height: 0; }
 
 pre {
@@ -701,7 +727,8 @@ input {
 
 input[type="checkbox"],
 input[type="radio"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0; }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -710,7 +737,6 @@ input[type="number"]::-webkit-outer-spin-button {
 
 input[type="search"] {
   -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   box-sizing: content-box; }
 
