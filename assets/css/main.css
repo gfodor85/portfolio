@@ -223,7 +223,7 @@ header {
 
 @media (max-width: 960px) {
   header {
-    height: 1200px; }
+    height: 1000px; }
     header .about_container {
       position: relative;
       width: auto;
@@ -236,11 +236,12 @@ header {
           -ms-flex-pack: center;
               justify-content: center; }
       header .about_container .about_me_sm {
+        position: absolute;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        width: 500px;
-        height: 100%;
+        width: 700px;
+        height: 800px;
         fill: #fff; }
       header .about_container .about_me, header .about_container .periodic_badges {
         display: none; }
