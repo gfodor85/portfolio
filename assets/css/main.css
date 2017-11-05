@@ -238,7 +238,9 @@ header {
       header .about_container .about_me_sm {
         position: absolute;
         display: inherit;
-        fill: #fff; }
+        fill: #fff;
+        width: 100vw;
+        height: 100vh; }
       header .about_container .about_me, header .about_container .periodic_badges {
         display: none; }
         header .about_container .about_me #about-badge, header .about_container .periodic_badges #about-badge {
