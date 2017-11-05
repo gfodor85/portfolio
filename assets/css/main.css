@@ -237,11 +237,7 @@ header {
               justify-content: center; }
       header .about_container .about_me_sm {
         position: absolute;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        width: 100vh;
-        height: 100vh;
+        display: inherit;
         fill: #fff; }
       header .about_container .about_me, header .about_container .periodic_badges {
         display: none; }
