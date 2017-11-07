@@ -274,6 +274,10 @@ header {
           left: 718px;
           top: 181px; } }
 
+@media (max-width: 768px) {
+  header {
+    height: 1200px; } }
+
 .hexagon-container {
   position: relative;
   overflow: hidden;
@@ -405,16 +409,14 @@ header {
       -webkit-transform: rotate(270deg);
               transform: rotate(270deg); } }
 
-#skills .row {
-  height: 250px; }
-
 .myskills {
   position: relative;
   padding: 50px 0  50px 0;
   background-color: #008598;
   background-attachment: fixed;
   background-position: center center;
-  color: #fff; }
+  color: #fff;
+  height: 320px; }
   .myskills ul {
     margin: 0 auto; }
 
@@ -437,10 +439,20 @@ header {
 
 .skill_icons_container {
   position: relative;
-  height: 250px; }
+  height: 450px; }
   .skill_icons_container .skills-icon {
     display: inline;
     width: 90px; }
+
+@media (max-width: 767px) {
+  .tag_container1 {
+    position: relative;
+    float: none;
+    margin: 8px auto; }
+  .tag_container2 {
+    position: relative;
+    float: none;
+    margin: 8px auto; } }
 
 @media (max-width: 450px) {
   .skills_title_container {
@@ -455,16 +467,6 @@ header {
       text-transform: uppercase;
       -webkit-transform: rotate(270deg);
               transform: rotate(270deg); } }
-
-@media (max-width: 767px) {
-  .tag_container1 {
-    position: relative;
-    float: none;
-    margin: 8px auto; }
-  .tag_container2 {
-    position: relative;
-    float: none;
-    margin: 8px auto; } }
 
 .form-container {
   background: #fff !important;
@@ -765,3 +767,17 @@ table {
 td,
 th {
   padding: 0; }
+
+.swiper-container {
+  height: 260px;
+  width: 90%;
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.swiper-slide {
+  background-color: transparent !important;
+  background-position: center;
+  background-size: cover;
+  width: 260px !important;
+  height: 260px !important;
+  border: 2px solid #fff; }

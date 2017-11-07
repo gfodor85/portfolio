@@ -1,7 +1,3 @@
-#skills
-    .row
-        height: 250px
-
 .myskills
     position: relative
     padding: 50px 0  50px 0
@@ -10,7 +6,7 @@
         attachment: fixed
         position: center center
     color: $font-color
-
+    height: 320px
 
     ul
         margin: 0 auto
@@ -36,13 +32,23 @@
 
 .skill_icons_container
     position: relative
-    height: 250px
+    height: 450px
 
     .skills-icon
         display: inline
         width: 90px
 
+@media (max-width: 767px)
 
+    .tag_container1
+        position: relative
+        float: none
+        margin: 8px auto
+
+    .tag_container2
+        position: relative
+        float: none
+        margin: 8px auto
 
 @media (max-width: 450px)
 
@@ -58,16 +64,3 @@
                 font-size: 20px !important
                 text-transform: uppercase
                 transform: rotate(270deg)
-
-
-@media (max-width: 767px)
-
-    .tag_container1
-        position: relative
-        float: none
-        margin: 8px auto
-
-    .tag_container2
-        position: relative
-        float: none
-        margin: 8px auto

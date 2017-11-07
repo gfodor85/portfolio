@@ -13,7 +13,8 @@
 
         <link href="https://fonts.googleapis.com/css?family=Muli:300,400,900" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/6-vendors/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" c href="assets/css/6-vendors/bootstrap/bootstrap.min.css">
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.css'>
 
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -148,31 +149,28 @@
 
 <!-- MY SKILLS SECTION -->
 
-    <section class="myskills fade-content">
+    <section class="myskills">
 
         <div class="skills_title_container">
             <div class="skills_title">My skills</div>
         </div>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2">
-                    <img class="img-responsive skills-icon" src="assets/img/skills_icons/html5_logo.png">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
                 </div>
-                <div class="col-lg-2">
-                    <img class="img-responsive skills-icon" src="assets/img/skills_icons/css3_logo.png">
-                </div>
-                <div class="col-lg-2">
-                    <img class="img-responsive skills-icon" src="assets/img/skills_icons/bootstrap_logo.png">
-                </div>
-                <div class="col-lg-2">
-                    <img class="img-responsive skills-icon" src="assets/img/skills_icons/sass_logo.png">
-                </div>
-                <div class="col-lg-2">
-                    <img class="img-responsive skills-icon" src="assets/img/skills_icons/gulp_logo.png">
-                </div>
-            </div>
-        </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+             </div>
 
     </section>
 
@@ -208,7 +206,28 @@
 <!-- Contact -->
 <script src="assets/js/contact.js"></script>
 
+<!-- Swiper JS -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js'></script>
 
+  <!-- Initialize Swiper -->
+  <script>
+      var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: false,
+          slidesPerView: 'auto',
+          coverflow: {
+            rotate: 20,
+            stretch: 50,
+            depth: 250,
+            modifier: 1,
+            slideShadows : false,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+          },
+        });
+  </script>
 
 <!-- Smoothscroll script -->
 <!-- script src="assets/js/smoothscroll.js"></scrip -->
