@@ -157,13 +157,48 @@
 
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide"></div>
-                  <div class="swiper-slide"></div>
-                  <div class="swiper-slide"></div>
-                  <div class="swiper-slide"></div>
-                  <div class="swiper-slide"></div>
-                  <div class="swiper-slide"></div>
-                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide">
+                      <svg class="skills_logo">
+                          <use xlink:href="assets/img/svg/symbols.svg#html5_logo"></use>
+                      </svg>
+                  </div>
+
+                  <div class="swiper-slide">
+                      <svg class="skills_logo">
+                          <use xlink:href="assets/img/svg/symbols.svg#css_logo"></use>
+                      </svg>
+                  </div>
+
+                  <div class="swiper-slide">
+                      <svg class="skills_logo">
+                          <use xlink:href="assets/img/svg/symbols.svg#sass_logo"></use>
+                      </svg>
+                  </div>
+
+                  <div class="swiper-slide">
+                      <svg class="skills_logo">
+                          <use xlink:href="assets/img/svg/symbols.svg#jquery_logo"></use>
+                      </svg>
+                  </div>
+
+                  <div class="swiper-slide">
+                      <svg class="skills_logo">
+                          <use xlink:href="assets/img/svg/symbols.svg#gulp_logo"></use>
+                      </svg>
+                  </div>
+
+                  <div class="swiper-slide">
+                      <svg class="skills_logo">
+                          <use xlink:href="assets/img/svg/symbols.svg#nodejs_logo"></use>
+                      </svg>
+                  </div>
+
+                  <div class="swiper-slide">
+                      <svg class="skills_logo">
+                          <use xlink:href="assets/img/svg/symbols.svg#php_logo"></use>
+                      </svg>
+                  </div>
+
                   <div class="swiper-slide"></div>
                   <div class="swiper-slide"></div>
                   <div class="swiper-slide"></div>
@@ -214,11 +249,11 @@
       var swiper = new Swiper('.swiper-container', {
           effect: 'coverflow',
           grabCursor: true,
-          centeredSlides: false,
+          centeredSlides: true,
           slidesPerView: 'auto',
           coverflow: {
             rotate: 20,
-            stretch: 50,
+            stretch: -20,
             depth: 250,
             modifier: 1,
             slideShadows : false,

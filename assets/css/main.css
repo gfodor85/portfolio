@@ -444,6 +444,11 @@ header {
     display: inline;
     width: 90px; }
 
+.skills_logo {
+  width: 100%;
+  height: 100%;
+  fill: #fff; }
+
 @media (max-width: 767px) {
   .tag_container1 {
     position: relative;
@@ -778,6 +783,5 @@ th {
   background-color: transparent !important;
   background-position: center;
   background-size: cover;
-  width: 260px !important;
-  height: 260px !important;
-  border: 2px solid #fff; }
+  width: 240px !important;
+  height: 240px !important; }
