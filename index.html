@@ -151,6 +151,14 @@
 
     <section class="myskills">
 
+        <div class="skills_modal">
+            <div class="skills_modal_inner">
+                <svg class="gesture-swipe-left">
+                    <use xlink:href="assets/img/svg/symbols.svg#gesture-swipe-left"></use>
+                </svg>
+            </div>
+        </div>
+
         <div class="skills_title_container">
             <div class="skills_title">My skills</div>
         </div>
@@ -172,6 +180,12 @@
                   <div class="swiper-slide">
                       <svg class="skills_logo">
                           <use xlink:href="assets/img/svg/symbols.svg#sass_logo"></use>
+                      </svg>
+                  </div>
+
+                  <div class="swiper-slide">
+                      <svg class="skills_logo">
+                          <use xlink:href="assets/img/svg/symbols.svg#bootstrap_logo"></use>
                       </svg>
                   </div>
 
@@ -199,11 +213,8 @@
                       </svg>
                   </div>
 
-              </div>
-              <!-- Add Arrows -->
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-             </div>
+                  </div>
+                  <!-- Add Arrows -->
 
     </section>
 
@@ -242,30 +253,34 @@
 <!-- Swiper JS -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js'></script>
 
-  <!-- Initialize Swiper -->
-  <script>
+<!-- Initialize Swiper -->
+<script>
       var swiper = new Swiper('.swiper-container', {
-          effect: 'coverflow',
-          grabCursor: true,
-          centeredSlides: true,
-          slidesPerView: 'auto',
-          coverflow: {
-            rotate: 20,
-            stretch: -20,
-            depth: 250,
-            modifier: 1,
-            slideShadows : false,
-          },
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-          },
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflow: {
+              rotate: 20,
+              stretch: -20,
+              depth: 250,
+              modifier: 1,
+              slideShadows : false,
+            },
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+            },
         });
-  </script>
+</script>
+
+<script>
+    $(document).ready(function(){
+        $(".skills_modal").click(function(){
+            $(this).hide();
+        });
+    });
+</script>
 
 <!-- Smoothscroll script -->
 <!-- script src="assets/js/smoothscroll.js"></scrip -->
