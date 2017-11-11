@@ -95,7 +95,7 @@
     <div class="hexagon-container fade-content" id="works">
 
         <div class="works_title_container">
-            <div class="works_title sidebar">My latest works</div>
+            <div class="works_title sidebar">My Recent works</div>
         </div>
 
         <div class="hexagon-inner">
@@ -260,6 +260,7 @@
             grabCursor: true,
             centeredSlides: true,
             slidesPerView: 'auto',
+            mousewheelControl: true,
             coverflow: {
               rotate: 20,
               stretch: -20,
@@ -277,7 +278,7 @@
 <script>
     $(document).ready(function(){
         $(".skills_modal").click(function(){
-            $(this).hide();
+            $(this).fadeOut("slow");
         });
     });
 </script>
