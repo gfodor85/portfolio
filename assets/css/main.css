@@ -64,7 +64,14 @@
       -webkit-transform: translateX(50%) rotate(-90deg);
               transform: translateX(50%) rotate(-90deg);
       -webkit-transform-origin: left;
-              transform-origin: left; } }
+              transform-origin: left; }
+    .title_container #works {
+      position: relative;
+      bottom: 940px;
+      color: #008598; }
+    .title_container #skills {
+      position: relative;
+      bottom: 100px; } }
 
 body {
   width: 100%;
