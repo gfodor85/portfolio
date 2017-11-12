@@ -6,3 +6,56 @@
     font-weight: 300
     src: url(../fonts/)
 
+//Vertical title
+.title_container
+    position: absolute
+    height: 100%
+    background: none
+    width: 50px
+    z-index: 1000
+
+    .title_content
+        display: flex
+        justify-content: center
+        align-items: flex-end
+        height: 100%
+
+    .title_text
+        font-family: 'Muli'
+        font-weight: 900
+        font-size: 30px
+        text-transform: uppercase
+        display: flex
+        white-space: nowrap
+        transform: translateX(50%) rotate(-90deg)
+        transform-origin: left
+
+    #works
+        position: relative
+        bottom: 100px
+        color: $secondary-color
+
+    #skills
+        position: relative
+        bottom: 70px
+
+@media (max-width: 450px)
+    .title_container
+        width: 30px
+        z-index: 1000
+
+        .title_content
+            display: flex
+            justify-content: center
+            align-items: flex-end
+            height: 100%
+
+        .title_text
+            font-family: 'Muli'
+            font-weight: 900
+            font-size: 20px
+            text-transform: uppercase
+            display: flex
+            white-space: nowrap
+            transform: translateX(50%) rotate(-90deg)
+            transform-origin: left
