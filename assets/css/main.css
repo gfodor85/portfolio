@@ -111,8 +111,6 @@ header {
     position: fixed;
     right: 0;
     bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
     width: auto;
     height: auto; }
   header .about_container {
@@ -375,7 +373,7 @@ header {
           width: 100%; }
       header .about_container .periodic_badges {
         position: relative;
-        width: 500px;
+        width: 100%;
         height: 400px;
         z-index: -5; }
         header .about_container .periodic_badges #about-badge {
@@ -383,29 +381,29 @@ header {
           width: 120px; }
         header .about_container .periodic_badges .logo {
           position: absolute;
-          top: -30px;
-          left: 130px;
-          width: 120px; }
+          top: -550px;
+          left: 40px;
+          width: 100px; }
         header .about_container .periodic_badges .front-end_hexa {
           position: absolute;
           top: -30px;
-          left: 249px; }
+          left: 63px; }
         header .about_container .periodic_badges .dv_hexa {
           position: absolute;
-          top: 71px;
-          left: 190px; }
+          top: -30px;
+          left: 179px; }
         header .about_container .periodic_badges .de_hexa {
           position: absolute;
-          top: 172px;
-          left: 130px; }
+          top: 72px;
+          left: 121px; }
         header .about_container .periodic_badges .ux_hexa {
           position: absolute;
-          top: 172px;
-          left: 248px; }
+          top: 174px;
+          left: 63px; }
         header .about_container .periodic_badges .ui_hexa {
           position: absolute;
-          top: 274px;
-          left: 190px; } }
+          top: 174px;
+          left: 179px; } }
 
 .hexagon-container {
   position: relative;
