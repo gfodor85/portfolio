@@ -132,10 +132,10 @@ header {
       height: 600px; }
       header .about_container .about_text .about_me {
         position: absolute;
-        top: -50px;
-        left: -50px;
-        width: 700px;
-        height: 700px; }
+        top: 20px;
+        left: 20px;
+        width: 100%;
+        height: 100%; }
     header .about_container .periodic_badges {
       position: relative;
       width: 500px;
@@ -272,10 +272,11 @@ header {
               align-items: center; }
       header .about_container .about_text {
         width: 500px;
-        height: 300px; }
+        height: 600px; }
       header .about_container .periodic_badges {
         width: 500px;
-        height: 300px; }
+        height: 300px;
+        top: -145px; }
     header .header_bottom {
       position: absolute;
       min-height: 0px;
@@ -318,15 +319,14 @@ header {
       display: flex;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
-              justify-content: center; }
+              justify-content: center;
+      height: 600px; }
       header .about_container .about_text .about_me {
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        top: -50px;
-        left: -50px; }
+        top: 20px;
+        left: 10px; }
     header .about_container .periodic_badges {
       position: relative;
+      top: 0;
       width: 400px;
       height: 600px;
       z-index: -5; }
@@ -341,7 +341,7 @@ header {
 @media (max-width: 960px) {
   header {
     width: 100%;
-    height: 1300px;
+    height: 1100px;
     padding: 50px 0 0 0; }
     header .about_container {
       display: -webkit-box;
@@ -366,48 +366,46 @@ header {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        width: 150%;
+        width: 100%;
         height: 500px; }
         header .about_container .about_text .about_me {
           position: absolute;
-          top: -80px;
+          top: 0;
           left: 0;
           width: 100%; }
       header .about_container .periodic_badges {
-        display: none;
         position: relative;
         width: 500px;
-        height: 300px;
-        background-color: #44a4d9;
+        height: 400px;
         z-index: -5; }
         header .about_container .periodic_badges #about-badge {
-          fill: #fff; }
+          fill: #fff;
+          width: 120px; }
         header .about_container .periodic_badges .logo {
           position: absolute;
-          top: 15px;
-          left: -41px;
-          width: 150px;
-          height: 150px; }
+          top: -30px;
+          left: 130px;
+          width: 120px; }
         header .about_container .periodic_badges .front-end_hexa {
           position: absolute;
-          left: -52px;
-          top: 127px; }
+          top: -30px;
+          left: 249px; }
         header .about_container .periodic_badges .dv_hexa {
           position: absolute;
-          left: 10px;
-          top: 237px; }
+          top: 71px;
+          left: 190px; }
         header .about_container .periodic_badges .de_hexa {
           position: absolute;
-          left: 135px;
-          top: 237px; }
+          top: 172px;
+          left: 130px; }
         header .about_container .periodic_badges .ux_hexa {
           position: absolute;
-          left: 72px;
-          top: 347px; }
+          top: 172px;
+          left: 248px; }
         header .about_container .periodic_badges .ui_hexa {
           position: absolute;
-          left: 10px;
-          top: 456px; } }
+          top: 274px;
+          left: 190px; } }
 
 .hexagon-container {
   position: relative;
