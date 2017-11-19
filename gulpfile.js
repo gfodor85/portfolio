@@ -5,7 +5,6 @@ var browserSync = require('browser-sync').create();
 var svgSprite = require("gulp-svg-sprites");
 
 
-
 gulp.task('styles', function ()  {
   gulp.src('assets/css/main.sass')
     .pipe(sass({
@@ -16,8 +15,6 @@ gulp.task('styles', function ()  {
     .pipe(gulp.dest('assets/css'))
     .pipe(browserSync.stream());
 });
-
-
 
 gulp.task('serve', function () {
   browserSync.init({

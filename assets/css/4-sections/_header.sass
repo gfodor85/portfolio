@@ -47,7 +47,7 @@ header
                 width: 100%
                 height: 100%
 
-        .periodic_badges
+        .hexa_badges
             position: relative
             width: 500px
             height: 300px
@@ -171,7 +171,7 @@ header
                 //background:
                     color: rgb(53, 130, 173)
 
-            .periodic_badges
+            .hexa_badges
                 width: 500px
                 height: 300px
                 top: -145px
@@ -229,7 +229,7 @@ header
                     //width: 700px
                     //height: 700px
 
-            .periodic_badges
+            .hexa_badges
                 position: relative
                 top: 0
                 width: 400px
@@ -278,47 +278,56 @@ header
                     width: 100%
                     //border: 1px solid red
 
-            .periodic_badges
+            .hexa_badges
                 position: relative
+                display: flex
+                justify-content: center
                 width: 100%
                 height: 400px
                 //background-color: rgb(68, 164, 217)
                 z-index: -5
 
-                #about-badge
-                    fill: #fff
-                    width: 120px
+                .badges_container
+                    position: relative
+                    display: flex
+                    justify-content: center
+                    width: 250px
+                    height: 300px
 
-                .logo
-                    position: absolute
-                    top: -550px
-                    left: 40px
-                    width: 100px
+                    #about-badge
+                        fill: #fff
+                        width: 120px
 
-                .front-end_hexa
-                    position: absolute
-                    top: -30px
-                    left: 63px
+                    .logo
+                        position: absolute
+                        top: 280px
+                        left: 65px
+                        width: 120px
 
-                .dv_hexa
-                    position: absolute
-                    top: -30px
-                    left: 179px
+                    .front-end_hexa
+                        position: absolute
+                        top: -28px
+                        left: 6px
 
-                .de_hexa
-                    position: absolute
-                    top: 72px
-                    left: 121px
+                    .dv_hexa
+                        position: absolute
+                        top: -28px
+                        left: 123px
 
-                .ux_hexa
-                    position: absolute
-                    top: 174px
-                    left: 63px
+                    .de_hexa
+                        position: absolute
+                        top: 75px
+                        left: 65px
 
-                .ui_hexa
-                    position: absolute
-                    top: 174px
-                    left: 179px
+                    .ux_hexa
+                        position: absolute
+                        top: 176px
+                        left: 6px
+
+                    .ui_hexa
+                        position: absolute
+                        top: 176px
+                        left: 123px
 
 //@media (max-width: 768px)
     header
