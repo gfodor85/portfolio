@@ -1,73 +1,63 @@
 .myskills
     position: relative
     //padding: 50px 0  50px 0
-    background:
+    //background:
+        image: url("../img/hexa_bg.png")
+        size: cover
+        position: center center
+        attachment: fixed
         color: $secondary-color
     color: $font-color
     height: 350px
-
-    //.skills_title_container
-        position: absolute
-        display: flex
-        top: 190px
-        width: 200px
-        text-align: center
-
-        //.skills_title
-            position: absolute
-            font-family: 'Muli'
-            font-weight: 900
-            font-size: 30px
-            color: white
-            text-transform: uppercase
-            width: 300px
-            right: 0
-            bottom: 0
-            transform: rotate(270deg)
+    padding-top: 100px
 
     ul
         margin: 0 auto
 
     .skills_modal
         position: absolute
-        display: inline-block
-        background-color: rgba(255, 255, 255, 0.7)
+        display: flex
+        justify-content: center
+        //background-color: rgba(255, 255, 255, 0.7)
         width: 100%
         height: 100%
         z-index: 1000
         text-align: center
+        padding-top: 40px
 
         .skills_modal_inner
             display: flex
             flex-direction: row
             justify-content: center
+            height: 250px
+            width: 250px
+            border-radius: 500px
             transition: all 1s ease-out
+            //background-color: rgba(255, 255, 255, 0.8)
 
             .gesture-swipe-left
-                height: 250px
-                width: 250px
-                fill:  $secondary-color
+                display: flex
+                flex-direction: row
+                height: 180px
+                width: 180px
+                fill:  $primary-color-light
                 filter: drop-shadow(10px 10px 7px rgba(0,0,0,0.7))
-                padding-top: 90px
+                margin-top: 30px
+                //padding-bottom: 50px
 
 .skills_logo
-    width: 100%
-    height: 100%
+    width: 90%
+    height: 90%
     fill: #fff
     filter: drop-shadow(10px 10px 7px rgba(0,0,0,0.5))
 
+@media (max-width:960px)
 
-@media (max-width: 767px)
-
-    .tag_container1
-        position: relative
-        float: none
-        margin: 8px auto
-
-    .tag_container2
-        position: relative
-        float: none
-        margin: 8px auto
+    .skills_logo
+        width: 80%
+        height: 80%
+        fill: #fff
+        filter: drop-shadow(10px 10px 7px rgba(0,0,0,0.5))
 
 @media (max-width: 450px)
 

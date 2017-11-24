@@ -28,13 +28,13 @@
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-<header class="hero_bg">
+<header>
 
     <!-- Video background -->
-    <video autoplay loop muted='true' id="video-bg" poster="assets/img/hero_bg.jpg">
+    <!-- video autoplay loop muted='true' id="video-bg" poster="assets/img/hero_bg.jpg">
         <source src="assets/vid/coding1.mp4" type="video/mp4">
         <source src="assets/vid/coding1.webm" type="video/webm">
-    </video>
+    </video -->
 
     <div class="about_container">
 
@@ -46,12 +46,13 @@
 
         <div class="hexa_badges">
             <div class="badges_container">
+
                 <svg class="logo">
                     <use xlink:href="assets/img/svg/symbols.svg#logo"></use>
                 </svg>
 
-                <svg class="front-end_hexa" id="about-badge">
-                    <use xlink:href="assets/img/svg/symbols.svg#front-end_hexa"></use>
+                <svg class="fe_hexa" id="about-badge">
+                    <use xlink:href="assets/img/svg/symbols.svg#fe_hexa"></use>
                 </svg>
 
                 <svg class="dv_hexa" id="about-badge">
@@ -77,7 +78,7 @@
         <a href="#works" class="scroll-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
     </div>
 
-    <div class="header_bottom"></div>
+    <!-- div class="header_bottom"></div -->
 
 </header>
 
@@ -85,11 +86,11 @@
 
 <!-- MY WORKS SECTION -->
 
-    <div class="hexagon-container" id="works">
+    <div class="hexagon-container">
 
         <div class="title_container">
             <div class="title_content">
-                <h1 class="title_text" id="works">My recent works</h1>
+                <h1 class="title_text" id="title-color_one">My recent works</h1>
             </div>
         </div>
 
@@ -97,7 +98,7 @@
 
             <div class="hexagon-item">
                <a href="https://gfodor85.github.io/Azulite/" target="_blank" class="hexagon-img">
-                   <img src="assets/img/azulite_hexa.png">
+                   <img class="inner_img" src="assets/img/azulite_hexa.png">
                 </a>
             </div>
 
@@ -156,7 +157,7 @@
 
         <div class="title_container">
             <div class="title_content">
-                <h1 class="title_text" id="skills">My skills</h1>
+                <h1 class="title_text" id="title-color_two">My skills</h1>
             </div>
         </div>
 
@@ -226,7 +227,7 @@
 
                     <form id="contact-form" method="POST" action="contact.php">
                         <input type="text" name="name" placeholder="Your name">
-                        <input type="email" name="email" placeholder="Your email">
+                        <input type="email" name="email" placeholder="Your email address">
                         <textarea name="message" rows="8" placeholder="Your message"></textarea>
                         <button type="submit">Send</button>
                     </form>
@@ -235,6 +236,11 @@
             </div>
         </div>
     </div>
+
+<!-- Footer -->
+    <footer>
+        <span>Copyright © 2017 All Rights Reserved by George Fodor</span>
+    </footer>
 
 
 <!-- Bootstrap Core JavaScript -->
