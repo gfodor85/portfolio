@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148.59 171.57">
+  <title>ux_hexa</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Skills_badge">
+      <g id="UX">
+        <polygon points="146.59 127.53 146.59 44.05 74.29 2.31 2 44.05 2 127.53 74.29 169.26 146.59 127.53" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"/>
+        <polygon points="133.09 119.67 133.09 51.9 74.39 18.01 15.7 51.9 15.7 119.67 74.39 153.56 133.09 119.67" fill="#20c8c9" opacity="0.5"/>
+        <text transform="translate(29.82 118.9)" font-size="12" fill="#fff" font-family="Muli-Regular, Muli">User Experience</text>
+        <text transform="translate(26.65 100.1)" font-size="67.63" fill="#fff" font-family="Muli-Bold, Muli" font-weight="700">UX</text>
+      </g>
+    </g>
+  </g>
+</svg>

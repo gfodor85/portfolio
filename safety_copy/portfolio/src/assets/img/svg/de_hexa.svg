@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="148.59" height="171.57" viewBox="0 0 148.59 171.57">
+  <title>de_hexa</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Skills_badge">
+      <g id="De">
+        <polygon points="146.59 127.53 146.59 44.05 74.29 2.31 2 44.05 2 127.53 74.29 169.26 146.59 127.53" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"/>
+        <polygon points="132.99 119.67 132.99 51.9 74.29 18.01 15.6 51.9 15.6 119.67 74.29 153.56 132.99 119.67" fill="#20c8c9" opacity="0.5"/>
+        <text transform="translate(53.86 118.9)" font-size="12" fill="#fff" font-family="Muli-Regular, Muli">Design</text>
+        <text transform="translate(30 100.1)" font-size="67.63" fill="#fff" font-family="Muli-Bold, Muli" font-weight="700">De</text>
+      </g>
+    </g>
+  </g>
+</svg>
