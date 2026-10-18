@@ -201,10 +201,12 @@
             <div class="row">
                 <div class="col-lg-12">
 
-                    <form id="contact-form" method="POST" action="contact.php">
-                        <input type="text" name="name" placeholder="Your name">
-                        <input type="email" name="email" placeholder="Your email address">
-                        <textarea name="message" rows="8" placeholder="Your message"></textarea>
+                    <form id="contact-form" method="POST" action="https://formspree.io/f/YOUR_FORM_ID">
+                        <input type="text" name="name" placeholder="Your name" aria-label="Your name" autocomplete="name" minlength="2" maxlength="100" required>
+                        <input type="email" name="email" placeholder="Your email address" aria-label="Your email address" autocomplete="email" maxlength="254" required>
+                        <textarea name="message" rows="8" placeholder="Your message" aria-label="Your message" minlength="10" maxlength="5000" required></textarea>
+                        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" hidden>
+                        <div class="form-status" role="status" aria-live="polite"></div>
                         <button type="submit">Send</button>
                     </form>
 
