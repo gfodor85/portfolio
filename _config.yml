@@ -1,0 +1,8 @@
+exclude:
+  - safety_copy/
+  - node_modules/
+  - vendor/
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
